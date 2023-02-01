@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        li {
+            width: 70px;
+            height: 20px;
+            list-style: none;
+            float: left;  /*왼쪽부터 정렬*/
+            padding: 15px;   /*간격*/
+        }
+        a:hover {
+            background: red;
+        }
+        li:first-child{/*첫번째선택*/
+            border-radius: 50px;
+        }
+        li:last-child{
+            border-radius: 50px 0 0 50px;
+        }
+        li:nth-child(2n) {/*짝수선택*/
+            background: orange;
+        }
+        li:nth-child(2n+1) {/*홀수선택*/
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--순서없는 목록-->
+    <ul>
+        <li>
+            <!--a 안뜨면 컨트롤+스페이스-->
+            <a href="page1.html">회원가입</a>
+        </li>
+        <li>
+            <a href="page2.html">제품정보</a>
+        </li>
+        <li>
+            <a href="page3.html">게시판</a>
+        </li>
+        <li>
+            <a href="page4.html">장바구니</a>
+        </li>
+    </ul>
+</body>
+</html>
