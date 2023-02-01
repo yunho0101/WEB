@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        width = prompt("가로길이를 입력하세요")
+        height = prompt("세로길이를 입력하세요")
+        result1= parseFloat(width)*parseFloat(height)
+        alert("사각형의 면적은 " + result1.toFixed(1)+"입니다.")
+        //result.toFixed(1)=> 소수첫째자리까지 나오게
+        coffee = prompt("커피 가격을 입력하세요")
+        ea = prompt("커피 갯수를 입력하세요")
+        result2= parseFloat(coffee)*parseFloat(ea)
+        alert("전체 결제 금액은 " + result2 +"입니다")
+
+        apple = prompt("사과의 가격을 입력하세요")
+        pear = prompt("배의 가격을 입력하세요")
+        anum = prompt("사과의 갯수를 입력하세요")
+        pnum= prompt("배의 갯수를 입력하세요")
+        result3= (parseFloat(apple)*parseFloat(anum))+(parseFloat(pear)*parseFloat(pnum))
+        alert("전체 결제 금액은 " + result3 +"입니다")
+
+        yes_temper = prompt("어제의 기온을 입력하세요")
+        tod_temper = prompt("오늘의 기온을 입력하세요")
+        result4 = (parseFloat(yes_temper) +parseFloat(tod_temper))/2
+        alert("어제와 오늘 온도의 평균은 "+ result4.toFixed(1) +"입니다")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
