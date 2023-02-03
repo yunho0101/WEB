@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="out.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(function () {
+        $('#b1').click(function() {
+          $.ajax({
+            url: "siteinfo1.html",
+            success : function(x) {
+              $('#d1').html(x)
+            }
+          })
+        })
+        $('#b2').click(function() {
+          $.ajax({
+            url: "siteinfo2.html",
+            success : function(x) {
+              $('#d2').html(x)
+            }
+          })
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <hr>
+    <div>
+     <table border="1" width="500" height="300" bgcolor="burlywood" style="border:none;">
+      <tr>
+         <td>
+          <h3>조회순</h3><button id="b1"> 10위까지보기</button>
+          <div id="d1" style="width: 250px; height: 300px; background: white;">
+          <img src='slam.jpg' width=250 height=300></div>
+          </td>
+         <td>
+          <h3>평점순</h3><button id="b2"> 10위까지보기</button>
+          <div id="d2" style="width: 250px; height: 300px; background: white;">
+          <img src='slam.jpg' width=250 height=300></div>
+        </td>
+        <td>
+          <h2>1위 영화 예고편보기</h2>
+        <iframe width="560" height="300" src="https://www.youtube.com/embed/sdFIv-yogIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </td>
+        
+        <h1><a href= "http://www.megabox.co.kr"> MEGABOX </a></h1><br>
+  </body>
+</html>
